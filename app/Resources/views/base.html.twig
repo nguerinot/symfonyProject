@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Symfony Project</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    {% block stylesheets %}
+        <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" />
+    {% endblock %}
+    <style type="text/css">
+        body{
+            padding-top: 60px;
+        }
+    </style>
+</head>
+<body>
+<!-- menu -->
+        {{ include('BoAdminBundle:Default:menu.html.twig') }}
+<!-- menu end -->
+
+<div class="container">
+    <div class="row">
+        {% block body %}
+        {% endblock %}
+    </div>
+</div>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+{% block javascripts %}
+    <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+{% endblock %}
+</body>
+</html>

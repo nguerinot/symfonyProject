@@ -1,0 +1,8 @@
+bo_admin:
+    resource: "@BoAdminBundle/Controller/"
+    type:     annotation
+    prefix:   /admin
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
